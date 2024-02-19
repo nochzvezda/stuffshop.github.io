@@ -1,0 +1,25 @@
+.about-catalog{
+    .container{
+        .content{
+            span{
+                color: var(--black, #171718);
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .career{
+                .career__table{
+                    border: 1px var(--color-black) solid;
+                    margin-bottom: 20px;
+                    padding-left: 10px;
+                    h5{
+                        color: var(--color-blue);
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+                
+            }
+        }
+    }
+}

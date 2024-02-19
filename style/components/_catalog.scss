@@ -1,0 +1,244 @@
+.catalog{
+    .container__catalog{
+        
+        .catalog-content{
+            display: flex;
+            
+            .catalog-filter-cloth{
+                .catalog-filters{
+                    margin-right: 60px;
+                    width: 240px;
+            
+                    .hide-filters{
+                        padding-left: 20px;
+                        margin-bottom: 10px;
+                        color: var(--color-black);
+                        font-size: 12px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        opacity: 0.5;
+                        border: none;
+                        background-color: transparent;
+                        background-image: url("../img/cross.svg");
+                        background-position: left center;
+                        background-repeat: no-repeat;
+                    }
+
+                    .catalog-filter{
+                        margin-top: -1px;
+                        border: 1px var(--color-black) solid;
+                        padding-left: 10px;
+
+
+                        &__bottom{
+                            display: none;
+                        }
+
+                        &--open{
+                            .catalog-filter__bottom{
+                                display: block;
+                            }
+
+                            .catalog-filter__toggle{
+                                &::before{
+                                    display: none;
+                                }
+
+                            }
+                        }
+                        
+                        &__top{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                        &__items{
+                            margin-top: -2px;
+                        }
+                        &__title{
+                            color: var(--color-black);
+                            font-size: 12px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            opacity: 0.5;
+                            margin-bottom: -10px;
+                            margin-top: 1px;
+                            padding-bottom: 10px;
+                        }
+                        &__toggle{
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                            margin-right: 10px;
+                            position: relative;
+                            width: 12px;
+                            height: 12px;
+                            color: var(--color-black);
+                            opacity: 0.5;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                top: 0;
+                                width: 2px;
+                                height: 100%;
+                                background-color: currentColor;
+                                transform: translateX(-50%);
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                width: 100%;
+                                height: 2px;
+                                background-color: currentColor;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.custom-ckeckbox{
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 2px;
+    &__input{
+        margin-left: 0;
+    }
+    &__text{
+        position: relative;
+        color: var(--color-black);
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__input{
+        &:checked + span{
+            font-weight: 600;
+        }
+    }
+}
+
+.catalog-grid{
+    width: 1200px;
+    margin-top: 12px;
+    
+
+    &__contents{
+        .catalog-grid__content{
+            flex-wrap: wrap;
+            display: flex;
+            
+           
+        }
+    }
+}
+
+.product-catalog{
+    margin-bottom: 10px;
+    margin-left: -1px;
+    &__image{
+        border: 1px var(--color-black) solid;
+        width: 300px;
+        height: 300px;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    &__title{
+        margin: 10px 0 20px 0 ;
+        width: 260px;
+        a{
+            color: var(--color-black);
+            font-size: 14px;
+            font-weight: 400;
+            text-transform:none;
+        }
+
+        a:hover{
+            color: var(--color-blue);
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    &__price{
+        color: var(--color-black);
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    
+}
+
+
+
+.pereklyuchatel-stranits { 
+    margin: 40px 0 20px -7px; 
+    padding: 0; 
+    display: flex; 
+} 
+
+
+  .pereklyuchatel-stranits a { 
+    width: 15px; 
+    height: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 100%; 
+    margin: 0 5px; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: #CECED0;
+    transition: all 0.2s linear 0s; 
+  } 
+
+
+  .pereklyuchatel-stranits a:after { 
+    content: ""; 
+    display: block; 
+    width: 90%; 
+    height: 90%; 
+    top: -110%; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    position: absolute; 
+    background-color: var(--color-black); 
+    border-radius: 100%; 
+  } 
+
+
+  .pereklyuchatel-stranits a:hover:after {
+    top: 5%; 
+    transition: all 0.2s linear 0s; 
+}
+
+.catalog-sale{
+    
+    .container__catalog-sale{
+        .catalog-grid__content{
+            display: flex;
+            margin-left: 22%;
+
+            .catalog-grid__item{
+               
+                .product-catalog{
+                    
+                    .product-catalog__price{
+                        color: var(--color-red);
+                    }
+                }
+            }
+        }
+        
+    }
+}

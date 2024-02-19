@@ -1,0 +1,19 @@
+.catalog{
+    margin-bottom: 20px;
+    .container{
+        .content{
+            display: flex;
+            justify-content: space-between;
+            .content__catalog-img{
+                a{
+
+                    img:hover{
+                        -webkit-box-shadow: 1px 5px 11px 4px rgba(184, 184, 184, 0.67); 
+                        -moz-box-shadow: 1px 5px 11px 4px rgba(184, 184, 184, 0.67); 
+                        box-shadow: 1px 5px 11px 4px rgba(184, 184, 184, 0.67);
+                    }
+                }
+            
+        }
+    
+    }}}

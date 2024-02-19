@@ -1,0 +1,22 @@
+.hero{
+    height: 76vh;
+    min-height: 400px;
+    min-height: 60%;
+    .background{
+        min-width: 640px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        // margin-top: 100px;
+        left: 0;
+        
+    }
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        height: 725px;
+    }
+}

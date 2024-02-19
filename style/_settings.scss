@@ -1,0 +1,132 @@
+.container{
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-white);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-lightGrey);
+    text-transform: uppercase;
+}
+
+.btn-reset{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.border{
+    width: 155%;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: transparent;
+    border-radius: 44px;
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pink{
+    width: 155%;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: transparent;
+    border-radius: 44px;
+    border: 2px solid var(--color-pink);
+    color: var(--color-pink);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.border:hover{
+    color:var(--color-blue);
+    border: 2px solid var(--color-blue);
+}
+
+h1{
+    color: var(--color-white);
+    font-size: 96px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-white{
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h2{
+    color: var(--color-black);
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4{
+    color: var(--color-black);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.to-register{   
+    cursor: pointer;
+    color: var(--color-blue);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hero__container-catalog{
+        ul.breadcrumb {
+            margin-top: 0;
+            padding: 0px;
+            list-style: none;
+
+            li {
+                text-transform: uppercase;
+                display: inline;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--color-black)
+
+                a{
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+      
+        ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: var(--color-black);
+            opacity: 0.5;
+            content: "/\00a0";
+        }
+      
+        ul.breadcrumb li a:hover {
+            color: var(--color-blue);
+            text-decoration: underline;
+        }
+}
+

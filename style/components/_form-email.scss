@@ -1,0 +1,81 @@
+.form-email{
+    margin-top: -150px;
+    background-color: #F4F4F4;
+    padding-bottom: 100px;
+    .form__ball{
+        img{
+            display: flex;
+            position: relative;
+            z-index: 1;
+            margin-top: -250px;
+        }
+    }
+    .form{
+        &__h1{
+            text-align: center;
+            h1{
+                -webkit-text-stroke: 1px rgba(29, 27, 30, 0.1);
+                color: transparent;
+                font-size: 180px;
+                font-weight: 700;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+
+        &__flex{
+            display: flex;
+            justify-content: space-between;
+            .form__jordan{
+                position: absolute;
+                z-index: 1;
+                margin-left: 60%;
+                margin-top: -100px;
+            }
+            .form__input{
+                margin: 0 auto;
+                justify-content: center;
+                form{
+                    input{
+                        border-radius: 44px;
+                        border: none;
+                        cursor: pointer;
+                    }
+    
+                    .input{
+                        position: absolute;
+                        z-index: 1;
+                        background-color: var(--color-white);
+                        width: 500px;
+                        color: rgba(23, 23, 24, 0.48);
+                        font-size: 15px;
+                        font-weight: 400;
+                        height: 72px;
+                        padding-left: 30px;
+                    }
+    
+                    .button{
+                        height: 74px;
+                        z-index: 2;
+                        margin-left: 360px;
+                        position: relative;
+                        color:var(--color-white);
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        width: 180px;
+                        background: var(--color-black);
+                        margin-top: 20px;
+    
+                        &:hover{
+                            background-color: var(--color-blue);
+                        }
+                    }
+                }
+                
+   
+            }
+        }
+    }
+}
